@@ -34,6 +34,6 @@ segments = diar.diarize(WAV_FILE,
                         num_speakers=NUM_SPEAKERS)
 combined_waveplot(signal, fs, segments, figsize=(10,3), tick_interval=60)
 plt.show()
-display(Audio(signal, rate=fs))
+
 #waveplot_perspeaker(signal, fs, segments)
-pprint(segments)
+#pprint(segments)
