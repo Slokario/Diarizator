@@ -14,8 +14,8 @@ import torchaudio
 from speechbrain.pretrained import EncoderClassifier
 from tqdm.autonotebook import tqdm
 
-from cluster import cluster_AHC, cluster_SC
-from utils import (check_wav_16khz_mono, convert_wavfile,
+from .cluster import cluster_AHC, cluster_SC
+from .utils import (check_wav_16khz_mono, convert_wavfile,
                      parse_ttml)
 
 
