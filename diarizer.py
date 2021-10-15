@@ -227,7 +227,7 @@ class Diarizer:
         print('Running VAD...')
         speech_ts = self.vad(signal[0])
         print('Splitting by silence found {} utterances'.format(len(speech_ts)))
-        assert len(speech_ts) >= 1, "Couldn't find any speech during VAD"
+        assert len(speech_ts) >= 1, "Не удалоль обнаружить речь"
 
         print('Extracting embeddings...')
         embeds, segments = self.recording_embeds(signal, fs, speech_ts)
